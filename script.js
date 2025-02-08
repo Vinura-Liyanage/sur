@@ -14,7 +14,7 @@ const questions = [
     "Are you sure? 🥺",
     "Oi? Pakki! 😢",
     "Think carefully... 🤔",
-    "You can't be serious! 😭",
+    "IIIIIIIIIIIIIIII CRYYYYYYYYYY",
     "Last chance to change your mind! 🫣"
 ];
 
