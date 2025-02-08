@@ -2,7 +2,7 @@ let noClickCount = 0;
 
 // GIFs that change on each "No" click
 const gifLinks = [
-    "https://tenor.com/x7Wz.gif",
+    "https://tenor.com/view/bts-hug-air-hug-alone-lonely-gif-5711341",
     "https://media.tenor.com/G4wbpC_TqRAAAAAC/anime-sad.gif",
     "https://media.tenor.com/BB8CArBB3TsAAAAC/cat-flower.gif",
     "https://media.tenor.com/DX6FESs2wI8AAAAC/pleading-kitten.gif",
