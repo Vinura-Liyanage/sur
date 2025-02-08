@@ -1,6 +1,6 @@
 let noClickCount = 0;
 
-// GIFs stored locally in the "gifs/" folder
+// Local GIF Paths
 const gifLinks = [
     "gifs/gif1.gif",
     "gifs/gif2.gif",
@@ -9,10 +9,10 @@ const gifLinks = [
     "gifs/gif5.gif"
 ];
 
-// Changing questions
+// Changing Questions
 const questions = [
     "Are you sure? 🥺",
-    "Oi ? Pakki! 😢",
+    "Oi? Pakki! 😢",
     "Think carefully... 🤔",
     "You can't be serious! 😭",
     "Last chance to change your mind! 🫣"
@@ -29,19 +29,18 @@ function handleNo() {
         question.innerText = questions[noClickCount] || "Come on, say yes! 😡";
 
         // Increase size of Yes button
-        yesButton.style.transform = `scale(${1 + noClickCount * 0.2})`;
+        yesButton.style.transform = `scale(${1 + noClickCount * 0.3})`;
     }
 
     if (noClickCount >= gifLinks.length) {
-        yesButton.style.transform = 'scale(10)';
         question.innerText = 'Okay, enough. You HAVE to say YES! 😤';
+        yesButton.style.transform = 'scale(10)';
 
-        setTimeout(() => {
-            window.location.href = "yes.html"; // Redirect to final YES page
-        }, 2000);
+        // Disable "No" button
+        document.getElementById('noButton').style.display = "none";
     }
 }
 
 function handleYes() {
-    window.location.href = "yes.html"; // Redirect when Yes is clicked
+    window.location.href = "yes.html"; // Redirect to YES page
 }
