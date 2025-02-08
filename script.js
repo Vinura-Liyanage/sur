@@ -2,13 +2,14 @@ let noClickCount = 0;
 
 // GIFs that change on each "No" click
 const gifLinks = [
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fpikachu-crying-gifs&psig=AOvVaw0sEVCxy43FvIQPMw1J0VlB&ust=1739127579939000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjQ957htIsDFQAAAAAdAAAAABAI",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2F724516658778449419%2F&psig=AOvVaw3Cnoxg9PXwyQNKstCKsssU&ust=1739127631755000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCMCVoLjhtIsDFQAAAAAdAAAAABAE",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fview%2Fpikachu-flowers-pokemon-gif-24289296&psig=AOvVaw2Ne-mhEtSk3qy3a4Qhs89k&ust=1739127686560000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCPjS6dPhtIsDFQAAAAAdAAAAABAE",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Ftenor.com%2Fsearch%2Fcat-flower-gifs&psig=AOvVaw2nStIUiEpPiNp4CUwmdOIP&ust=1739127725945000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCLjBp-ThtIsDFQAAAAAdAAAAABAR",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fgiphy.com%2Fgifs%2Fpokemon-anime-aNFT7eG2rIKK715uLk&psig=AOvVaw34VqMN7SNkDoDQ8dN8VkIV&ust=1739127780624000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCIih5v7htIsDFQAAAAAdAAAAABAJ",
-    "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pinterest.com%2Fpin%2Fgifgangnam3gif--495255290257321261%2F&psig=AOvVaw3yrxWsLUt0jGskxb0ISMW0&ust=1739127822403000&source=images&cd=vfe&opi=89978449&ved=0CBMQjRxqFwoTCMDex5LitIsDFQAAAAAdAAAAABAQ"  // Final GIF when "No" is clicked too much
+    "https://media.tenor.com/zRqdU4t1z64AAAAC/pikachu-crying.gif",
+    "https://media.tenor.com/G4wbpC_TqRAAAAAC/anime-sad.gif",
+    "https://media.tenor.com/BB8CArBB3TsAAAAC/cat-flower.gif",
+    "https://media.tenor.com/DX6FESs2wI8AAAAC/pleading-kitten.gif",
+    "https://media.tenor.com/I2k8J5KMJj8AAAAC/anime-cry.gif",
+    "https://media.tenor.com/8pV5Xw0jkyIAAAAC/yes-dance.gif" // Final GIF when "No" is clicked too much
 ];
+
 
 // Questions that change with each "No"
 const questions = [
@@ -45,11 +46,13 @@ function handleNo() {
         question.innerText = 'Okay, enough. You HAVE to say YES! 😤';
 
         setTimeout(() => {
-            window.location.href = "https://your-final-yes-gif.com"; // Redirect to the final "Yes" message
+            wwindow.location.href = "https://media.tenor.com/8pV5Xw0jkyIAAAAC/yes-dance.gif";
+
         }, 2000);
     }
 }
 
 function handleYes() {
-    window.location.href = "https://your-final-yes-gif.com"; // Redirect when Yes is clicked
+    window.location.href = "https://media.tenor.com/8pV5Xw0jkyIAAAAC/yes-dance.gif";
+
 }
