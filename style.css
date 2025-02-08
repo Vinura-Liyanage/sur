@@ -1,39 +1,64 @@
+/* General Styling */
 body {
     text-align: center;
-    font-family: Arial, sans-serif;
-    background-color: #ffcccb;
+    font-family: "Arial", sans-serif;
+    background-color: #ffe6e6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
+/* Main Content Container */
+.container {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Title Text */
 h1 {
-    font-size: 24px;
-    color: #ff1e56;
+    font-size: 28px;
+    color: #ff4081;
+    margin-bottom: 20px;
 }
 
+/* GIF Styling */
 img {
-    width: 300px;
+    width: 250px;
     height: auto;
-    margin: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
 }
 
+/* Button Container */
 .button-container {
     display: flex;
     justify-content: center;
     gap: 20px;
 }
 
+/* Buttons */
 button {
-    font-size: 18px;
+    font-size: 20px;
     padding: 10px 20px;
     border: none;
     cursor: pointer;
     transition: 0.3s;
+    border-radius: 8px;
+    font-weight: bold;
 }
 
+/* Yes Button */
 #yesButton {
     background-color: #4CAF50;
     color: white;
 }
 
+/* No Button */
 #noButton {
     background-color: #f44336;
     color: white;
